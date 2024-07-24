@@ -1,0 +1,70 @@
+.button{
+    position: relative;
+    display: inline-block;
+}
+
+.button > div {
+width: 160;
+  height: 59;
+  background-image: linear-gradient(#626262, #000);
+  border-radius: 9px;
+}
+
+.button > div:hover {
+background-image: linear-gradient(#b0b0b0, #353535);
+cursor: pointer;
+}
+
+.button h3 {
+margin: 0;
+  padding: 19 0 19 0;
+user-select: none;
+}
+
+.imgc h3 {
+color: white;
+  font-family: Ultra;
+  display: inline-block;
+  align-self: center;
+  width: 33%;
+  text-align: center;
+}
+
+.imgc {
+min-height: 300px;
+  outline: 1px solid red;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgc h4 {
+font-family: Arial;
+  color: white;
+  width: 33%;
+  text-align: center;
+margin-right: 3%;
+align-content: center;
+}
+
+.imgc img {
+width: 33%;
+  object-fit: contain;
+  margin-right: 3%;
+max-height: 100%;
+}
+
+.imgc div {
+display: flex;
+  height: 100%;
+  align-content: center;
+width: 100%;
+  margin: 30 0 30 0;
+}
+
+@media screen and (max-width: 1000px) {
+.imgc div {
+flex-direction: column;
+  align-items: center;
+}
+}
